@@ -1,6 +1,7 @@
 
 import { Box, Flex, Grid, Heading, VStack } from '@chakra-ui/react';
 import Calendar from './components/calendar/Calendar';
+import DynamicCalendarInput from './components/DynamicCalendar';
 
 function App() {
   const today = new Date();
@@ -15,14 +16,7 @@ function App() {
                     <Heading size="md">Current Date Highlighted</Heading>
                     <Calendar date={today} />
                 </Flex>
-                 <Flex direction="column" gap="8px" alignItems={"center"}>
-                    <Heading size="md">Specific Date Highlighted</Heading>
-                    <Calendar date={"03/10/2022"} />
-                </Flex>
-                 <Flex direction="column" gap="8px" alignItems={"center"}>
-                    <Heading size="md">Specific Date Highlighted</Heading>
-                    <Calendar date={"23/03/2020"} />
-                </Flex>
+                <DynamicCalendarInput />
             </Grid>
       </VStack>
     </Box>
