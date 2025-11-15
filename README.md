@@ -2,6 +2,12 @@
 
 This project implements a reusable `<Calendar />` component using **React TypeScript** and **Chakra UI v2**, fulfilling all the provided requirements for functionality, component separation, and date flexibility.
 
+## Visual Demo
+
+Below demonstrates the component rendering fixed dates, showing correct highlighting and grid alignment for different months.
+
+![Calendar Component Showcase Example](assets/calendar_showcase.png)
+
 ## ✨ Features
 
 * **Reusable Component:** Single, self-contained `<Calendar date={...} />` component.
